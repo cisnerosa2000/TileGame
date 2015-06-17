@@ -21,8 +21,11 @@ def read():
             if not c:
                 break
             
-        
-            if c == '0':
+            if c == '/n':
+                coord1[1] += 50
+                coord2[1] += 50
+                
+            elif c == '0':
                 color = 'red'
             elif c == '1':
                 color = 'green'
@@ -33,11 +36,8 @@ def read():
             canvas.create_rectalnge(coord1[0],coord1[1],*coord2,fill=color)
         
             coord1[0] += 50
-            coord1[1] += 50
         
-            coord2[0] += 50
-            coord2[1] += 50
-          
+            coord2[0] += 50          
 read()        
         
                
