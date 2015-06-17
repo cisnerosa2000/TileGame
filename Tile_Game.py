@@ -16,7 +16,27 @@ coords = [0,0]
 dirt_tile = PhotoImage(file='dirt.gif')
 sky_tile = PhotoImage(file='sky.gif')
 door_tile = PhotoImage(file='door.gif')
+#p1_sprite = PhotoImage(file='p1.gif')
+#p2_sprite = PhotoImage(file='p2.gif')
 
+
+class Player_1(object):
+    def __init__(self,coords):
+        pass
+    def move_right(self):
+        pass
+    def move_left(self):
+        pass
+    def jump(self):
+        pass
+class Player_2(object):
+    def __init__(self,coords):
+        pass
+    def update(sef):
+        pass
+        #coords = udp.get()
+        #canvas.coords(self,coords)
+        
 
 
 def read():
