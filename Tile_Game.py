@@ -4,13 +4,17 @@ import math
 root = Tk()
 root.title('Tiles')
 canvas = Canvas(root)
-canvas.config(width=600,height=400)
+canvas.config(width=1000,height=600)
+#20 x 12
+
 
 coord1 = [0,0]
 coord2 = [50,50]
 
 
 color = 'red'
+
+dirt_tile = PhotoImage(file='dirt.gif')
 
 
 
