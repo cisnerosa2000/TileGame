@@ -12,10 +12,10 @@ coords = [0,0]
 
 
 
-color = 'red'
 
 dirt_tile = PhotoImage(file='dirt.gif')
 sky_tile = PhotoImage(file='sky.gif')
+door_tile = PhotoImage(file='door.gif')
 
 
 
@@ -39,7 +39,9 @@ def read():
             elif c == '1':
                 tile = dirt_tile
                 make = True
-                
+            elif c == '3':
+                tile = door_tile
+                make = True
             
             if make == True:
                 tile = canvas.create_image(*coords,image=tile)
