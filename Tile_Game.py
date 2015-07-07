@@ -45,7 +45,7 @@ class Enemy(object):
         global first_time
         if self.kind == 'zom':
             self.sprite = canvas.create_image(*self.coords,image=zom_tile,tags="Enemy")
-            self.health = 200
+            self.health = 50
             sprite_list.append(self.sprite)
             
             canvas.move(self.sprite,0,-30)
@@ -199,6 +199,7 @@ def read():
                     
         
                 coords[0] += 50
+                
                          
             
 read()
@@ -380,7 +381,7 @@ def loop():
     elif ("Enemy",) in collision_list and player_one.alive == True:
         
         try:
-            player_one.health -= 10
+            player_one.health -= .6
             canvas.itemconfig(player_one.healthbar,fill="red")
         except:
             pass
